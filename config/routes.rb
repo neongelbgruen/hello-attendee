@@ -1,4 +1,12 @@
 Railsgirls::Application.routes.draw do
+  resources :attendees
+
+  match '/hello(/:name)', :controller => 'attendees', :action => 'hello'
+
+  root :to => 'attendees#new'
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

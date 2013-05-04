@@ -1,0 +1,6 @@
+Here's your list: <br />
+<ol>
+	<% @attendees.each do |attendee| %>
+	<li><%= link_to attendee.name.capitalize, attendee %></li>
+	<% end %>
+</ol>

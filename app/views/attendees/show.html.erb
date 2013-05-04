@@ -1,0 +1,9 @@
+All the info: <br />
+
+<ul>
+<% @attendee.attributes.each do |key, value| %>
+<li><%= key %>: <%= value %></li>
+<% end %>
+</ul>
+
+<%= link_to 'Go back', attendees_path %>

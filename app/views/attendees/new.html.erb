@@ -1,0 +1,6 @@
+<%= form_tag :action => :hello do %>
+Enter your name : <%= text_field_tag :name %>
+<%= submit_tag %>
+<% end %>
+
+<%= link_to 'See all the attendees', attendees_path %>
